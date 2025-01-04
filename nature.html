@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature's Beauty</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: url('https://source.unsplash.com/1600x900/?nature,forest') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 5rem 0;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #4CAF50;
+            padding: 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 2rem;
+        }
+
+        .card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 1rem;
+            width: 300px;
+            overflow: hidden;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card h3 {
+            margin: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .card p {
+            margin: 1rem;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            background: #333;
+            color: white;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Nature's Beauty</h1>
+        <p>Explore the wonders of the natural world</p>
+    </header>
+
+    <nav>
+        <a href="#forests">Forests</a>
+        <a href="#rivers">Rivers</a>
+        <a href="#mountains">Mountains</a>
+        <a href="#wildlife">Wildlife</a>
+    </nav>
+
+    <section id="content">
+        <div class="card">
+            <img src="https://source.unsplash.com/300x200/?forest" alt="Forest">
+            <h3>Forests</h3>
+            <p>Forests are home to diverse ecosystems and breathtaking landscapes.</p>
+        </div>
+        <div class="card">
+            <img src="https://source.unsplash.com/300x200/?river" alt="River">
+            <h3>Rivers</h3>
+            <p>Rivers provide life and beauty, flowing through valleys and plains.</p>
+        </div>
+        <div class="card">
+            <img src="https://source.unsplash.com/300x200/?mountain" alt="Mountain">
+            <h3>Mountains</h3>
+            <p>Majestic mountains stand tall, offering stunning views and challenges.</p>
+        </div>
+        <div class="card">
+            <img src="https://source.unsplash.com/300x200/?wildlife" alt="Wildlife">
+            <h3>Wildlife</h3>
+            <p>Discover the incredible creatures that inhabit our planet.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Nature's Beauty. All rights reserved.</p>
+    </footer>
+</body>
+</html>
