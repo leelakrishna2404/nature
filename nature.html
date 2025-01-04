@@ -3,75 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nature's Beauty</title>
+    <title>Swiggy - Your Favorite Food Delivered</title>
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #eafbea;
+            background-color: #f7f7f7;
             color: #333;
         }
 
         header {
-            background: url('https://source.unsplash.com/1600x900/?nature,greenery') no-repeat center center/cover;
+            background: #fc8019;
             color: white;
             text-align: center;
-            padding: 5rem 0;
+            padding: 2rem;
         }
 
         header h1 {
-            font-size: 3rem;
             margin: 0;
+            font-size: 2.5rem;
         }
 
         nav {
             display: flex;
-            justify-content: center;
-            background: #4CAF50;
+            justify-content: space-around;
+            background: #333;
             padding: 1rem;
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 1rem;
-            font-weight: bold;
+            font-size: 1.1rem;
         }
 
         nav a:hover {
             text-decoration: underline;
         }
 
-        section {
+        .hero {
+            text-align: center;
+            padding: 4rem 1rem;
+            background: url('https://source.unsplash.com/1600x900/?food') no-repeat center center/cover;
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin: 1rem 0;
+        }
+
+        .btn {
+            background: #fc8019;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .btn:hover {
+            background: #e56c10;
+        }
+
+        .features {
             display: flex;
-            flex-wrap: wrap;
             justify-content: space-around;
+            flex-wrap: wrap;
             padding: 2rem;
         }
 
-        .card {
+        .feature {
             background: white;
             border: 1px solid #ddd;
             border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             margin: 1rem;
+            padding: 1rem;
             width: 300px;
-            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
-        .card img {
+        .feature img {
             width: 100%;
             height: auto;
+            border-radius: 5px;
         }
 
-        .card h3 {
-            margin: 1rem;
-            font-size: 1.5rem;
-        }
-
-        .card p {
-            margin: 1rem;
-            color: #555;
+        .feature h3 {
+            margin: 1rem 0;
         }
 
         footer {
@@ -80,53 +106,52 @@
             color: white;
             padding: 1rem;
         }
-
-        .green-highlight {
-            background-color: #d4f7d4;
-            padding: 0.5rem;
-            border-radius: 5px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to Nature's Beauty</h1>
-        <p class="green-highlight">Explore the lush greenery and wonders of the natural world</p>
+        <h1>Swiggy</h1>
+        <p>Your Favorite Food Delivered</p>
     </header>
 
     <nav>
-        <a href="#forests">Forests</a>
-        <a href="#rivers">Rivers</a>
-        <a href="#mountains">Mountains</a>
-        <a href="#wildlife">Wildlife</a>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
     </nav>
 
-    <section id="content">
-        <div class="card">
-            <img src="https://source.unsplash.com/300x200/?forest,green" alt="Forest">
-            <h3>Forests</h3>
-            <p>Forests are home to diverse ecosystems and breathtaking greenery.</p>
+    <div class="hero">
+        <h2>Craving something delicious?</h2>
+        <p>Get your favorite meals delivered to your doorstep in no time.</p>
+        <button class="btn">Order Now</button>
+    </div>
+
+    <section class="features">
+        <div class="feature">
+            <img src="https://source.unsplash.com/300x200/?pizza" alt="Pizza">
+            <h3>Delicious Pizzas</h3>
+            <p>Enjoy a variety of freshly made pizzas, delivered hot and fresh.</p>
         </div>
-        <div class="card">
-            <img src="https://source.unsplash.com/300x200/?river,greenery" alt="River">
-            <h3>Rivers</h3>
-            <p>Rivers provide life and beauty, flowing through vibrant green valleys.</p>
+        <div class="feature">
+            <img src="https://source.unsplash.com/300x200/?burger" alt="Burger">
+            <h3>Juicy Burgers</h3>
+            <p>Sink your teeth into the juiciest burgers in town.</p>
         </div>
-        <div class="card">
-            <img src="https://source.unsplash.com/300x200/?mountain,greenery" alt="Mountain">
-            <h3>Mountains</h3>
-            <p>Majestic mountains stand tall, surrounded by lush greenery.</p>
+        <div class="feature">
+            <img src="https://source.unsplash.com/300x200/?dessert" alt="Dessert">
+            <h3>Sweet Desserts</h3>
+            <p>Indulge in our delectable range of desserts.</p>
         </div>
-        <div class="card">
-            <img src="https://source.unsplash.com/300x200/?wildlife,green" alt="Wildlife">
-            <h3>Wildlife</h3>
-            <p>Discover the incredible creatures that thrive in green habitats.</p>
+        <div class="feature">
+            <img src="https://source.unsplash.com/300x200/?sushi" alt="Sushi">
+            <h3>Authentic Sushi</h3>
+            <p>Fresh and authentic sushi delivered to your doorstep.</p>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 Nature's Beauty. All rights reserved.</p>
+        <p>&copy; 2025 Swiggy. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
